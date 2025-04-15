@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Boyfriend?</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background-color: #ffe6f0;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            padding: 50px;
+        }
+        .question {
+            font-size: 28px;
+            margin-bottom: 30px;
+            color: #e91e63;
+        }
+        .buttons button {
+            padding: 12px 25px;
+            font-size: 16px;
+            margin: 10px;
+            border: none;
+            border-radius: 8px;
+            background-color: #ff4081;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .buttons button:hover {
+            background-color: #f50057;
+        }
+        #warningGif {
+            margin-top: 20px;
+            max-width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="question">Am I in the right place? Did this reach the most beautiful boy?</h1>
+        <div class="buttons">
+            <button onclick="goToNext()">Yes</button>
+            <button onclick="startDrama()">No</button>
+        </div>
+        <div>
+            <img id="warningGif" src="/gif/beautifulboy.gif" alt="Beautiful Boy">
+        </div>
+    </div>
+
+    <script>
+        function goToNext() {
+            window.location.href = "page2.html";
+        }
+
+        function startDrama() {
+            const gif = document.getElementById("warningGif");
+            gif.src = "/gif/howdareyou.gif";
+            gif.alt = "How Dare You";
+            // alert("Huh, the audacity!! Let's give you one more chance 😤");
+        }
+    </script>
+</body>
+</html>
